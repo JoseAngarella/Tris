@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: CornflowerBlue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.jose.controller.PrimaryController">
+   <children>
+      <Label alignment="CENTER" prefHeight="85.0" prefWidth="189.0" text="Tris" textFill="#4e2dcc">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font></Label>
+      <Button fx:id="primaryButton" onAction="#switchToSecondary" style="-fx-background-color: white;" text="Inizia partita" textFill="#1120bc">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font></Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
