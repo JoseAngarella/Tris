@@ -21,6 +21,8 @@ public class TertiaryController implements Initializable {
     @FXML
     private Label labelTurno;
 
+    
+
     @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("primary");
@@ -54,7 +56,7 @@ public class TertiaryController implements Initializable {
         }
     }
 
-    
+
 
     @FXML
     private void vittoria() {
