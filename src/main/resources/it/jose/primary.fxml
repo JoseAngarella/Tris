@@ -3,7 +3,10 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: CornflowerBlue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.jose.controller.PrimaryController">
@@ -12,10 +15,35 @@
          <font>
             <Font name="System Bold" size="72.0" />
          </font></Label>
+      <Line endX="129.5" startX="-100.0" />
+      <Label text="Quanti giocatori ?" textFill="#004b9a">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+      </Label>
+      <RadioButton id="botAttivo" fx:id="botAttivo" mnemonicParsing="false" text="1 giocatore" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="numeroGiocatori" />
+         </toggleGroup>
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton mnemonicParsing="false" text="2 giocatori" textFill="WHITE" toggleGroup="$numeroGiocatori">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <Line endX="129.5" startX="-100.0" />
       <Button fx:id="primaryButton" onAction="#switchToSecondary" style="-fx-background-color: white;" text="Inizia partita" textFill="#1120bc">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="17.0" />
          </font></Button>
+      <Label fx:id="messaggio" textAlignment="CENTER" textFill="#0234fc">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+      </Label>
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
